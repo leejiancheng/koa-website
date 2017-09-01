@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+body {
+    line-height: 24px;
+    font: {
+        family: "Open Sans", Helvetica, Arial, sans-serif;
+        size: 15px;
+    }
+    background: {
+        image: url(../images/Kareeb.jpg);
+        position: center center;
+        repeat: no-repeat;
+        attachment: fixed;
+        size: cover;
+        color: #464646;
+    }
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    .focusable {
+        &:active,
+        &:focus {
+            position: static;
+            width: auto;
+            height: auto;
+            margin: 0;
+            clip: auto;
+            overflow: visible;
+        }
+    }
+}
+
+.clearfix {
+    &:before,
+    &:after {
+        cotnent: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

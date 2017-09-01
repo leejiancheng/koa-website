@@ -1,0 +1,123 @@
+extends ../layout
+
+
+block content
+	section
+		.container
+			.row
+				.header
+					h1 We Are Coming Soon
+					img.img-responsive(src="./images/header-border.jpg", alt="header one border")
+					p Kareeb is a minimal, responsive, business coming soon HTML5 template based on Bootstrap 3. This multipurpose, customizable template includes newlete subscriptcontact form  and an about us page to talk about your company.
+	section
+		.container
+			.row
+				.count-down
+					ul#kareeb-countdown
+						li
+							span.days 00
+							p.days-text Days
+						li
+							span.hours 00
+							p.hours-text hours
+						li
+							span.minutes 00
+							p.minutes-text Minutes
+						li
+							span.seconds 00
+							p.seconds-text Seconds
+
+	section
+		.container
+			.row
+				footer.clo-ms-12.border
+					h1 KAREEB
+					img.img-responsive(src="./images/header-border.jpg", alt="footer border")
+					.footer-menu
+						ul.menu
+							li
+								a.about-content-open(href="javascript:void(0);") About Us
+								a.newsletter-content-open(href="javascript:void(0);") Newsletter
+								a.contact-open(href="javascript:void(0);") Contact
+					p Copyright #. All Rights Reserved
+					.footer-social-menu
+						ul.social-icon
+							li
+								a(href="javascript:void(0);")
+									i.fa.fa-facebook
+							li
+								a(href="javascript:void(0);")
+									i.fa.fa-twitter
+							li
+								a(href="javascript:void(0);")
+									i.fa.fa-dribbble
+
+	section#about-us-box
+		.container#about-us
+			.row
+				.about-content#about-content
+					.cross-btn
+						a(href="javascript:void(0);")
+							span.my-popup-close.fa.fa-close
+					.left-content.col-sm-12.col-md-6
+						h1 About us
+						h4 We offer free templates & themes
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis lectus, vulputate sed convallis et, consequat nec magna. Nunc nec odio sed enim sagittis egestas. Donec non quam at metus lacinia accumsan.
+						h4 Download everything for free!
+						p Quisque tincidunt justo nec arcu luctus, eu ullamcorper turpis gravida. Aliquam mattis tortor ut odio aliquam, et auctor leo viverra. Pellentesque accumsan massa sed tortor interdum lacinia. Duis vestibulum tincidunt eros at sollicitudin. Donec auctor tempus metus eget elementum. Suspendisse potenti.
+						ul.address-details
+							li
+								i.fa.fa-map-marker
+								| Green Place, New Plaza, Washington
+							li
+								i.fa.fa-map-marker
+								| 18718719922
+							li
+								i.fa.fa-home
+								| #
+							li
+								i.fa.fa-envelope
+								| webmaster@#
+					.right-content.col-sm-12.col-md-6
+						h1 What we do
+						h4 We offer free templates & themes
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed turpis lectus, vulputate sed convallis et, consequat nec magna. Nunc nec odio sed enim sagittis egestas. Donec non quam at metus lacinia accumsan.
+						h4 Download everything for free!
+						p Quisque tincidunt justo nec arcu luctus, eu ullamcorper turpis gravida. Aliquam mattis tortor ut odio aliquam, et auctor leo viverra. Pellentesque accumsan massa sed tortor interdum lacinia. Duis vestibulum tincidunt eros at sollicitudin. Donec auctor tempus metus eget elementum. Suspendisse potenti.
+
+
+	section#newsletter-box
+		.container
+			.row
+				.contuct-us.newsletter.center-pane#newsletter-content
+					h1 Newsletter
+						a(href="javascript:void(0)")
+							span.my-popup-close.fa.fa-close
+					form
+						.col-lg-12.col-md-12.col-sx-12 Stay updated. Type your email address tosubscribe our feed
+						.col-lg-12.col-md-12.col-sx-12
+							input(type="email", name="email")
+						.col-lg-12.col-md-12.col-sx-12
+							input.btn.btn-success.btn-block(type="submit", value="Send")
+
+	section#contact-box
+		.container
+			.row
+				.contuct-us#contact
+					h1 Contact Us
+						a(href="javascript:void(0);")
+							span.my-popup-close.fa.fa-close
+					form#contactform(method="post", action="#")
+						.col-lg-12.col-md-12.col-sx-12
+							label Full Name
+							input#name(type="text", name="name")
+						.col-lg-12.col-md-12.col-sx-12
+							label Email Address
+							input#email(type="email", name="email")
+						.col-lg-12.col-md-12.col-sx-12
+							label Message
+							textarea.message(name="message", row="6")
+						.col-lg-12.col-md-12.col-sx-12
+							input#button-send.btn.btn-success.btn-block(type="submit", value="Send")
+							#success Your message has been successfully!
+							#error Unable to send your message, please try later.

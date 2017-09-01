@@ -1,0 +1,12 @@
+@mixin buttonTip{
+	display: none;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+}
+
+@mixin cut{
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
